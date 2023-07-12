@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://wgjcek7e0w2y"]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_mel6o"]
+[ext_resource type="PackedScene" uid="uid://sg2m0pw7awdj" path="res://map/grounds/ground_0a.tscn" id="2_srgpg"]
+[ext_resource type="PackedScene" uid="uid://bmymihqh5bj65" path="res://terrain/bush.tscn" id="3_2uy3s"]
+[ext_resource type="PackedScene" uid="uid://bwists1nec4ki" path="res://terrain/rock_big.tscn" id="4_0s2sf"]
+
+[node name="Tile1AClearing1" instance=ExtResource("1_mel6o")]
+
+[node name="GroundPlane" parent="Terrain/Ground" index="0" instance=ExtResource("2_srgpg")]
+
+[node name="Bush2" parent="Props" index="0" instance=ExtResource("3_2uy3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.92633, 0, -2.21468)
+
+[node name="Bush3" parent="Props" index="1" instance=ExtResource("3_2uy3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.72819, 0, 3.55511)
+
+[node name="Bush4" parent="Props" index="2" instance=ExtResource("3_2uy3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12333, 0, 2.31598)
+variant = 1
+
+[node name="RockBig" parent="Props" index="3" instance=ExtResource("4_0s2sf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49571, 0, 0)
+variant = 1

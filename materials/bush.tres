@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c3n88lrjukll3"]
+
+[ext_resource type="Shader" path="res://shaders/waterisblue.gdshader" id="1_3m8c4"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_3m8c4")
+shader_parameter/edge_threshold = 0.1
+shader_parameter/highlight_color = Color(0, 0.72549, 0.631373, 1)
+shader_parameter/shadow_color = Color(0.490196, 0.184314, 0.631373, 1)
+shader_parameter/shadow_strength = 0.83
+shader_parameter/highlight_strength = 0.64

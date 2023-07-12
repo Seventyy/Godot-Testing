@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://bslhpm3jskmvm"]
+
+[ext_resource type="PackedScene" path="res://map/tiles/tiles_0/tile_0a_clearing_1.tscn" id="1_ca4qd"]
+[ext_resource type="PackedScene" path="res://map/tiles/tiles_0/tile_0a_forest_1.tscn" id="2_8jxwh"]
+[ext_resource type="PackedScene" path="res://map/tiles/tiles_2/tile_2a_forest_1.tscn" id="3_63c4w"]
+[ext_resource type="PackedScene" path="res://map/tiles/tiles_2/tile_2c_crystal_field_1.tscn" id="4_nwggc"]
+[ext_resource type="PackedScene" uid="uid://c7nadxbe6owkj" path="res://player/squad/squad.tscn" id="5_kcnf7"]
+[ext_resource type="PackedScene" uid="uid://d34f20wbtt5tk" path="res://enemies/raptor/raptor.tscn" id="6_1tvhq"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Tile0AClearing1" parent="." instance=ExtResource("1_ca4qd")]
+
+[node name="Tile0AForest1" parent="." instance=ExtResource("2_8jxwh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8564, 0, 0)
+coordinates = Vector2i(1, 0)
+
+[node name="Tile2AForest1" parent="." instance=ExtResource("3_63c4w")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 6.9282, 0, 12)
+coordinates = Vector2i(0, 1)
+tile_rotation = 2
+
+[node name="Tile2CCrystalField1" parent="." instance=ExtResource("4_nwggc")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 20.7846, 0, 12)
+coordinates = Vector2i(1, 1)
+tile_rotation = 2
+
+[node name="Tile2CCrystalField2" parent="." instance=ExtResource("4_nwggc")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 41.5692, 0, 24)
+coordinates = Vector2i(3, 2)
+tile_rotation = 2
+
+[node name="Squad" parent="." instance=ExtResource("5_kcnf7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.36095, 0.633121, -2.32944)
+
+[node name="Raptor" parent="." instance=ExtResource("6_1tvhq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.141708, 0, 0.291733)

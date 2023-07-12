@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dday25aowe88y"]
+
+[ext_resource type="PackedScene" uid="uid://dyso0sjncfu5x" path="res://map/walls/wall.tscn" id="1_2ugqo"]
+[ext_resource type="ArrayMesh" uid="uid://cymro3e6tqaum" path="res://map/walls/models/wall_solid.obj" id="1_cdk0e"]
+
+[node name="WallSolid" instance=ExtResource("1_2ugqo")]
+
+[node name="MeshInstance3D" parent="." index="0"]
+mesh = ExtResource("1_cdk0e")

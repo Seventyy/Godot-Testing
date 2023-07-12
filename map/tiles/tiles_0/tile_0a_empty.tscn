@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw78v6y3qc0am"]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_l8v6i"]
+[ext_resource type="PackedScene" path="res://map/grounds/ground_0a.tscn" id="2_sd083"]
+
+[node name="Tile0AEmpty" instance=ExtResource("1_l8v6i")]
+
+[node name="GroundFull" parent="Terrain/Ground" index="0" instance=ExtResource("2_sd083")]

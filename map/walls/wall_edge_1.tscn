@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbf5ys3ew75vk"]
+
+[ext_resource type="PackedScene" uid="uid://dyso0sjncfu5x" path="res://map/walls/wall.tscn" id="1_ak8aa"]
+[ext_resource type="ArrayMesh" uid="uid://bw0a13ghl1352" path="res://map/walls/models/wall_edge_1.obj" id="1_kyomi"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fu4af"]
+points = PackedVector3Array(6.04292, 0, -4.09856, 6.12925, 0.859656, -4.08647, 6.41483, 2.16363, -4.09292, 6.92778, 0, -4.00023, 5.15806, 0, -3.55615, 5.10182, 0.495154, -3.51021, 6.19225, 3.73653, -3.82453, 6.92778, 4.99983, -4.00023, 6.92778, 0, 3.9997, 4.73842, 0, 0.888707, 6.02374, 4.7121, -2.6978, 5.68693, 2.90992, -3.54003, 4.70092, 0.49007, 0.845185, 6.31041, 4.87376, -3.69074, 6.54301, 4.99983, -3.77779, 6.6095, 5.05321, -2.96055, 6.36425, 5.19352, -0.0397563, 6.92778, 4.99983, 3.9997, 6.25918, 1.59324, 4.1351, 6.04292, 0, 3.99729, 4.73842, 0, 1.77768, 6.33635, 5.09846, -1.06252, 5.80421, 4.37505, 1.87036, 5.31045, 2.0101, 2.90199, 6.45472, 4.99983, 3.3904, 6.54301, 4.99983, 3.99729, 6.21122, 4.29167, 3.92636, 5.51863, 1.34617, 3.81191, 5.15806, 0, 3.55481, 5.25922, 0.748323, 3.55965, 5.58207, 2.21447, 3.51935)
+
+[node name="WallEdge1" instance=ExtResource("1_ak8aa")]
+
+[node name="MeshInstance3D" parent="." index="0"]
+mesh = ExtResource("1_kyomi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+visible = false
+shape = SubResource("ConvexPolygonShape3D_fu4af")

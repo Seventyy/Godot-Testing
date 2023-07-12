@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://crdlodke4umgm"]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_k74ni"]
+[ext_resource type="PackedScene" path="res://map/grounds/ground_0a.tscn" id="2_vyi0r"]
+[ext_resource type="PackedScene" uid="uid://dp8fvpapnlcxc" path="res://map/walls/wall_edge_1.tscn" id="3_fhjqk"]
+
+[node name="Tile1AEmpty" instance=ExtResource("1_k74ni")]
+
+[node name="GroundFull" parent="Terrain/Ground" index="0" instance=ExtResource("2_vyi0r")]
+
+[node name="WallEdge1" parent="Terrain/Walls" index="0" instance=ExtResource("3_fhjqk")]

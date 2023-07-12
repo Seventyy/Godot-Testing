@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="ArrayMesh" uid="uid://bwl16ims0bkr0" path="res://map/walls/models/wall_big_strait_1.obj" id="1_uvav6"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_72vuh"]
+points = PackedVector3Array(9.615, 0, -5.557, 5.048, 0, -3.556, 9.561, 8.003, -5.488, 9.621, 0, 5.59, 7.921, 7.086, -5.006, 4.219, -0.036, 3.396, 9.561, 7.972, 5.598, 6.455, 4.17, 2.611)
+
+[node name="WallBigStrait1" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_uvav6")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_72vuh")

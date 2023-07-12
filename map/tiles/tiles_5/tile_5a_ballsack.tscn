@@ -1,0 +1,27 @@
+[gd_scene load_steps=8 format=3 uid="uid://wi354vafdk42"]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_olu1f"]
+[ext_resource type="PackedScene" path="res://map/grounds/ground_0a.tscn" id="2_vtbnp"]
+[ext_resource type="PackedScene" uid="uid://dp8fvpapnlcxc" path="res://map/walls/wall_edge_1.tscn" id="3_26knh"]
+[ext_resource type="PackedScene" uid="uid://dsd864tb1b3o4" path="res://map/walls/wall_full_1.tscn" id="4_6dj47"]
+[ext_resource type="PackedScene" uid="uid://0nrmi70g22ef" path="res://map/walls/wall_tranzition_edge_to_full_1.tscn" id="5_5ow5r"]
+[ext_resource type="PackedScene" uid="uid://dinfqpr23d4bt" path="res://map/walls/wall_tranzition_full_to_edge_1.tscn" id="6_e03o0"]
+[ext_resource type="PackedScene" uid="uid://cctqwf435nvn4" path="res://map/walls/wall_edge_2.tscn" id="7_3uyiy"]
+
+[node name="Tile5ABallsack" instance=ExtResource("1_olu1f")]
+
+[node name="GroundFull" parent="Terrain/Ground" index="0" instance=ExtResource("2_vtbnp")]
+
+[node name="WallEdge1" parent="Terrain/Walls" index="0" instance=ExtResource("3_26knh")]
+
+[node name="WallFull1" parent="Terrain/Walls" index="1" instance=ExtResource("4_6dj47")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 0, 0, 0)
+
+[node name="WallTranzitionEdgeToFull1" parent="Terrain/Walls" index="2" instance=ExtResource("5_5ow5r")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 0, 0, 0)
+
+[node name="WallTranzitionFullToEdge1" parent="Terrain/Walls" index="3" instance=ExtResource("6_e03o0")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="WallEdge2" parent="Terrain/Walls" index="4" instance=ExtResource("7_3uyiy")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 0, 0, 0)

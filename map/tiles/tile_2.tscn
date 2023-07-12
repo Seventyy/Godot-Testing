@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dhy5gwlynmg1g"]
+
+[node name="Tile2" type="Node3D"]
+
+[node name="Rotateable" type="Node3D" parent="."]
+
+[node name="Props" type="Node3D" parent="Rotateable"]
+
+[node name="Enemies" type="Node3D" parent="Rotateable"]
+
+[node name="Ground" type="Node3D" parent="Rotateable"]
+
+[node name="Walls" type="Node3D" parent="."]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_8aswc"]
+[ext_resource type="PackedScene" uid="uid://sg2m0pw7awdj" path="res://map/grounds/ground_0a.tscn" id="2_ddg1f"]
+[ext_resource type="PackedScene" uid="uid://csovlgnf23up1" path="res://terrain/tree.tscn" id="3_72cap"]
+[ext_resource type="PackedScene" path="res://map/walls/wall_primitive_edge.tscn" id="3_krirq"]
+[ext_resource type="PackedScene" uid="uid://bmymihqh5bj65" path="res://terrain/bush.tscn" id="4_v1tdf"]
+[ext_resource type="PackedScene" path="res://terrain/rock_small.tscn" id="6_eae0g"]
+
+[node name="Tile1AForestTranzition1" instance=ExtResource("1_8aswc")]
+
+[node name="GroundPlane" parent="Terrain/Ground" index="0" instance=ExtResource("2_ddg1f")]
+
+[node name="Wall" parent="Terrain/Walls" index="0" instance=ExtResource("3_krirq")]
+
+[node name="Tree" parent="Props" index="0" instance=ExtResource("3_72cap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.43655, 0, -0.434925)
+variant = 1
+
+[node name="Bush" parent="Props" index="1" instance=ExtResource("4_v1tdf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.93186, 0, 2.40814)
+variant = 1
+
+[node name="Bush2" parent="Props" index="2" instance=ExtResource("4_v1tdf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.178605, 0, -4.9113)
+
+[node name="Bush3" parent="Props" index="3" instance=ExtResource("4_v1tdf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.322066, 0, 4.78704)
+variant = 2
+
+[node name="RockSmall" parent="Props" index="4" instance=ExtResource("6_eae0g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.27459, 0, -1.0458)
+variant = 1

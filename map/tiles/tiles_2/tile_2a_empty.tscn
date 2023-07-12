@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbnrjnhh0pl3i"]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_16uua"]
+[ext_resource type="PackedScene" path="res://map/grounds/ground_0a.tscn" id="2_tqj3j"]
+[ext_resource type="PackedScene" uid="uid://dp8fvpapnlcxc" path="res://map/walls/wall_edge_1.tscn" id="3_xj373"]
+[ext_resource type="PackedScene" uid="uid://cctqwf435nvn4" path="res://map/walls/wall_edge_2.tscn" id="4_xxc6i"]
+
+[node name="Tile2AEmpty" instance=ExtResource("1_16uua")]
+
+[node name="GroundFull" parent="Terrain/Ground" index="0" instance=ExtResource("2_tqj3j")]
+
+[node name="WallEdge1" parent="Terrain/Walls" index="0" instance=ExtResource("3_xj373")]
+
+[node name="WallEdge2" parent="Terrain/Walls" index="1" instance=ExtResource("4_xxc6i")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 0, 0, 0)

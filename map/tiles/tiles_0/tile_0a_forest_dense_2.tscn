@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_d4kqa"]
+[ext_resource type="PackedScene" path="res://map/grounds/ground_0a.tscn" id="2_o52ek"]
+[ext_resource type="PackedScene" uid="uid://csovlgnf23up1" path="res://terrain/tree.tscn" id="3_rs421"]
+[ext_resource type="PackedScene" uid="uid://bmymihqh5bj65" path="res://terrain/bush.tscn" id="4_8la43"]
+
+[node name="Tile0ADenseForest2" instance=ExtResource("1_d4kqa")]
+
+[node name="GroundPlane" parent="Terrain/Ground" index="0" instance=ExtResource("2_o52ek")]
+
+[node name="Tree" parent="Props" index="0" instance=ExtResource("3_rs421")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3419, 0, -4.87413)
+variant = 2
+
+[node name="Tree2" parent="Props" index="1" instance=ExtResource("3_rs421")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42376, 0, -4.23117)
+variant = 1
+
+[node name="Tree3" parent="Props" index="2" instance=ExtResource("3_rs421")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.61716, 0, -0.561302)
+variant = 2
+
+[node name="Tree4" parent="Props" index="3" instance=ExtResource("3_rs421")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.06731, 0, 0)
+variant = 4
+
+[node name="Tree5" parent="Props" index="4" instance=ExtResource("3_rs421")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.94337, 0, 1.41154)
+variant = 3
+
+[node name="Tree6" parent="Props" index="5" instance=ExtResource("3_rs421")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.47538, 0, 4.42925)
+variant = 3
+
+[node name="Bush" parent="Props" index="6" instance=ExtResource("4_8la43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71787, 0, 2.66215)
+variant = 2
+
+[node name="Bush2" parent="Props" index="7" instance=ExtResource("4_8la43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.39361, 0, -2.63912)
+
+[node name="Bush3" parent="Props" index="8" instance=ExtResource("4_8la43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.801303, 0, 3.78704)
+variant = 1

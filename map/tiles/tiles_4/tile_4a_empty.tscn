@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://djibcom810py3"]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_ixkbg"]
+[ext_resource type="PackedScene" path="res://map/grounds/ground_0a.tscn" id="2_aukix"]
+[ext_resource type="PackedScene" uid="uid://dhc0pcvjrgtqc" path="res://map/walls/wall_full_quadruple_2.tscn" id="3_pr16f"]
+
+[node name="Tile4AEmpty" instance=ExtResource("1_ixkbg")]
+
+[node name="GroundFull" parent="Terrain/Ground" index="0" instance=ExtResource("2_aukix")]
+
+[node name="WallFullQuadruple2" parent="Terrain/Walls" index="0" instance=ExtResource("3_pr16f")]

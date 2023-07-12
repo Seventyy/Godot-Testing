@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dk44pw52swkmi"]
+
+[sub_resource type="Gradient" id="Gradient_lff3f"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ny0lk"]
+gradient = SubResource("Gradient_lff3f")
+
+[resource]
+albedo_color = Color(0.513726, 0.47451, 0.4, 1)
+metallic = 0.18
+metallic_specular = 0.24
+roughness = 0.64
+normal_enabled = true
+normal_texture = SubResource("GradientTexture1D_ny0lk")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 0.965936

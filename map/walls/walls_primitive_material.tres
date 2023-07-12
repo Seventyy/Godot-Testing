@@ -1,0 +1,10 @@
+[gd_resource type="ORMMaterial3D" load_steps=2 format=3 uid="uid://cl2by8gykd8ye"]
+
+[ext_resource type="Texture2D" uid="uid://bqg5dt6bsvnb" path="res://assets/rock_weathered_10.png" id="1_m7cox"]
+
+[resource]
+diffuse_mode = 1
+albedo_texture = ExtResource("1_m7cox")
+uv1_scale = Vector3(0.376, 0.376, 0.376)
+uv1_offset = Vector3(0.522, 0, 0)
+uv1_triplanar = true

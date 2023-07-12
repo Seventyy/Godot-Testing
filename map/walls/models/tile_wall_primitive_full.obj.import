@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cr426gb3mj1v4"
+path="res://.godot/imported/tile_wall_primitive_full.obj-ed96b856aba10a92492b574ada7fb967.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tile_wall_primitive_full.obj-ed96b856aba10a92492b574ada7fb967.mesh"]
+
+source_file="res://map/walls/models/tile_wall_primitive_full.obj"
+dest_files=["res://.godot/imported/tile_wall_primitive_full.obj-ed96b856aba10a92492b574ada7fb967.mesh", "res://.godot/imported/tile_wall_primitive_full.obj-ed96b856aba10a92492b574ada7fb967.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

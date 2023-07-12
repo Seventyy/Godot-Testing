@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmgxtw5wlxs2u"
+path="res://.godot/imported/wall_full_quadruple_2.obj-0b9103421424e8bce4ffe83e6a61fb02.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_full_quadruple_2.obj-0b9103421424e8bce4ffe83e6a61fb02.mesh"]
+
+source_file="res://map/walls/models/wall_full_quadruple_2.obj"
+dest_files=["res://.godot/imported/wall_full_quadruple_2.obj-0b9103421424e8bce4ffe83e6a61fb02.mesh", "res://.godot/imported/wall_full_quadruple_2.obj-0b9103421424e8bce4ffe83e6a61fb02.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

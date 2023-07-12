@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=3 uid="uid://dn7k28n2fhn26"]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_roubp"]
+[ext_resource type="PackedScene" path="res://map/grounds/ground_0a.tscn" id="2_bv0k2"]
+[ext_resource type="PackedScene" uid="uid://0nrmi70g22ef" path="res://map/walls/wall_tranzition_edge_to_full_1.tscn" id="3_0apq0"]
+[ext_resource type="PackedScene" uid="uid://cctqwf435nvn4" path="res://map/walls/wall_edge_2.tscn" id="4_tughq"]
+[ext_resource type="PackedScene" uid="uid://dp8fvpapnlcxc" path="res://map/walls/wall_edge_1.tscn" id="5_d04ip"]
+
+[node name="Tile3CTesting" instance=ExtResource("1_roubp")]
+
+[node name="GroundFull" parent="Terrain/Ground" index="0" instance=ExtResource("2_bv0k2")]
+
+[node name="WallTranzitionEdgeToFull1" parent="Terrain/Walls" index="0" instance=ExtResource("3_0apq0")]
+
+[node name="WallEdge2" parent="Terrain/Walls" index="1" instance=ExtResource("4_tughq")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 0, 0, 0)
+
+[node name="WallEdge1" parent="Terrain/Walls" index="2" instance=ExtResource("5_d04ip")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 0, 0, 0)

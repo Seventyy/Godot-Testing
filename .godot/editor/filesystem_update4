@@ -1,0 +1,9 @@
+res://edge_detection.tscn
+res://shaders/waterisblue.gdshader
+res://materials/walls.tres
+res://materials/ground.tres
+res://materials/chasm_walls.tres
+res://materials/bush.tres
+res://shaders/kostilus_first_pass.gdshader
+res://shaders/kostilus_second_pass.gdshader
+res://bush.tscn

@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_oqfwh"]
+[ext_resource type="PackedScene" uid="uid://sg2m0pw7awdj" path="res://map/grounds/ground_0a.tscn" id="2_vu5i5"]
+[ext_resource type="PackedScene" path="res://map/walls/wall_primitive_edge.tscn" id="3_0jpg7"]
+[ext_resource type="PackedScene" uid="uid://bpf73dypgu74y" path="res://terrain/crystal.tscn" id="4_oen4r"]
+[ext_resource type="PackedScene" uid="uid://bmymihqh5bj65" path="res://terrain/bush.tscn" id="5_m8b01"]
+
+[node name="Tile2ACrystalField1" instance=ExtResource("1_oqfwh")]
+
+[node name="GroundPlane" parent="Terrain/Ground" index="0" instance=ExtResource("2_vu5i5")]
+
+[node name="Wall" parent="Terrain/Walls" index="0" instance=ExtResource("3_0jpg7")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 0, 0, 0)
+
+[node name="Wall2" parent="Terrain/Walls" index="1" instance=ExtResource("3_0jpg7")]
+
+[node name="Crystal2" parent="Props" index="0" instance=ExtResource("4_oen4r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.286011, 0, 1.41649)
+
+[node name="Bush2" parent="Props" index="1" instance=ExtResource("5_m8b01")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08506, 0, 4.51173)
+variant = 1
+
+[node name="Bush3" parent="Props" index="2" instance=ExtResource("5_m8b01")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35004, 0, -2.55299)
+variant = 2

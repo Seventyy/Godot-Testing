@@ -1,0 +1,109 @@
+[gd_scene load_steps=10 format=3 uid="uid://bgrhsu0qikf1b"]
+
+[ext_resource type="PackedScene" uid="uid://dday25aowe88y" path="res://map/walls/wall_solid.tscn" id="1_vy04d"]
+[ext_resource type="PackedScene" uid="uid://yi3467apcb86" path="res://map/grounds/ground_0a.tscn" id="2_aavwi"]
+[ext_resource type="PackedScene" uid="uid://dbf5ys3ew75vk" path="res://map/walls/wall_edge_1.tscn" id="3_quxa4"]
+[ext_resource type="PackedScene" uid="uid://fx5ohafkjpbg" path="res://map/walls/wall_edge_thin_1.tscn" id="4_6c0ks"]
+[ext_resource type="PackedScene" uid="uid://cgb6tjw5hwbqx" path="res://map/walls/wall_full_1.tscn" id="5_cj3go"]
+[ext_resource type="PackedScene" uid="uid://be4as058bgeou" path="res://map/walls/wall_full_quadruple_1.tscn" id="6_0fch8"]
+[ext_resource type="PackedScene" uid="uid://bfaq00wwieldh" path="res://map/walls/wall_full_triple_1.tscn" id="7_m5a3i"]
+[ext_resource type="PackedScene" uid="uid://bve5ksn0yjdr5" path="res://bush.tscn" id="8_kd0us"]
+
+[sub_resource type="Environment" id="Environment_lbhwj"]
+
+[node name="EdgeDetection" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.939693, -0.17101, 0.296198, 0, 0.866025, 0.5, -0.34202, -0.469846, 0.813798, 10, 12, 12)
+
+[node name="Geometry" type="Node3D" parent="."]
+
+[node name="WallSolid" parent="Geometry" instance=ExtResource("1_vy04d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9282, 0, -12)
+
+[node name="GroundFull" parent="Geometry" instance=ExtResource("2_aavwi")]
+
+[node name="GroundFull4" parent="Geometry" instance=ExtResource("2_aavwi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9282, 0, -12)
+x = -1
+y = -1
+
+[node name="GroundFull2" parent="Geometry" instance=ExtResource("2_aavwi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.7846, 0, -12)
+x = 1
+y = -1
+
+[node name="GroundFull5" parent="Geometry" instance=ExtResource("2_aavwi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8564, 0, 0)
+x = -1
+
+[node name="GroundFull6" parent="Geometry" instance=ExtResource("2_aavwi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.7846, 0, -12)
+x = -2
+y = -1
+
+[node name="GroundFull3" parent="Geometry" instance=ExtResource("2_aavwi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8564, 0, 0)
+x = 1
+
+[node name="WallEdge1" parent="Geometry" instance=ExtResource("3_quxa4")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 0, 0, 0)
+tile_rotation = 5
+
+[node name="WallEdgeThin1" parent="Geometry" instance=ExtResource("4_6c0ks")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 13.8564, 0, 0)
+x = 1
+tile_rotation = 4
+
+[node name="WallFull1" parent="Geometry" instance=ExtResource("5_cj3go")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 20.7846, 0, -12)
+x = 1
+y = -1
+tile_rotation = 3
+
+[node name="WallFullQuadruple1" parent="Geometry" instance=ExtResource("6_0fch8")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, -6.9282, 0, -12)
+x = -1
+y = -1
+tile_rotation = 4
+
+[node name="WallFullTriple1" parent="Geometry" instance=ExtResource("7_m5a3i")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, -20.7846, 0, -12)
+x = -2
+y = -1
+tile_rotation = 5
+
+[node name="WallEdgeThin2" parent="Geometry" instance=ExtResource("4_6c0ks")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20.7846, 0, -12)
+x = -2
+y = -1
+tile_rotation = 3
+
+[node name="Props" type="Node3D" parent="."]
+
+[node name="Bush" parent="Props" instance=ExtResource("8_kd0us")]
+transform = Transform3D(-0.891141, 0, -0.453726, 0, 1, 0, 0.453726, 0, -0.891141, 2.84984, 0, -0.64897)
+
+[node name="Bush8" parent="Props" instance=ExtResource("8_kd0us")]
+transform = Transform3D(-0.967643, 0, -0.252323, 0, 1, 0, 0.252323, 0, -0.967643, -20.4555, 1.90735e-06, -7.14071)
+
+[node name="Bush9" parent="Props" instance=ExtResource("8_kd0us")]
+transform = Transform3D(-0.845951, 0, 0.53326, 0, 1, 0, -0.53326, 0, -0.845951, -16.231, 0, 0.083)
+
+[node name="Bush10" parent="Props" instance=ExtResource("8_kd0us")]
+transform = Transform3D(-0.998378, 0, 0.0569368, 0, 1, 0, -0.0569368, 0, -0.998378, -7.43906, -1.90735e-06, -4.49256)
+
+[node name="Bush11" parent="Props" instance=ExtResource("8_kd0us")]
+transform = Transform3D(-0.537476, 0, 0.843279, 0, 1, 0, -0.843279, 0, -0.537476, -3.83987, 0, 2.80195)
+
+[node name="Bush12" parent="Props" instance=ExtResource("8_kd0us")]
+transform = Transform3D(-0.942262, 0, 0.334876, 0, 1, 0, -0.334876, 0, -0.942262, 13.4012, 0, -2.90599)
+
+[node name="Bush13" parent="Props" instance=ExtResource("8_kd0us")]
+transform = Transform3D(-0.833375, 0, -0.552708, 0, 1, 0, 0.552708, 0, -0.833375, 12.0712, 0, 3.06738)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.186474, 0.445106, -0.875847, -0.0556959, 0.88526, 0.461749, 0.98088, 0.134885, -0.140288, -37.975, 0, 3.39066)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_lbhwj")

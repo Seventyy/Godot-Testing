@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://3hbjrmdpg8px"]
+
+[ext_resource type="PackedScene" uid="uid://dyso0sjncfu5x" path="res://map/walls/wall.tscn" id="1_hjfuk"]
+[ext_resource type="Material" uid="uid://cl2by8gykd8ye" path="res://map/walls/walls_primitive_material.tres" id="2_70rbh"]
+[ext_resource type="ArrayMesh" uid="uid://05frxjebkgil" path="res://map/walls/models/wall_full_triple_1.obj" id="3_ka51y"]
+
+[node name="Wall" instance=ExtResource("1_hjfuk")]
+
+[node name="MeshInstance3D" parent="." index="0"]
+material_override = ExtResource("2_70rbh")
+mesh = ExtResource("3_ka51y")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="1"]
+transform = Transform3D(0.977466, -0.0252836, -0.209573, 0.204838, 0.353502, 0.912731, 0.0510076, -0.935092, 0.350715, -6.39738, 0, 0)

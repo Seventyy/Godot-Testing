@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_bsuby"]
+[ext_resource type="PackedScene" path="res://map/grounds/ground_0a.tscn" id="2_nhibr"]
+[ext_resource type="PackedScene" uid="uid://csovlgnf23up1" path="res://terrain/tree.tscn" id="3_bhapu"]
+[ext_resource type="PackedScene" uid="uid://bmymihqh5bj65" path="res://terrain/bush.tscn" id="4_ewrsr"]
+
+[node name="Tile0ADenseForest1" instance=ExtResource("1_bsuby")]
+
+[node name="GroundPlane" parent="Terrain/Ground" index="0" instance=ExtResource("2_nhibr")]
+
+[node name="Tree" parent="Props" index="0" instance=ExtResource("3_bhapu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3419, 0, -3.91201)
+variant = 1
+
+[node name="Tree2" parent="Props" index="1" instance=ExtResource("3_bhapu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.593307, 0, -5.53744)
+
+[node name="Tree3" parent="Props" index="2" instance=ExtResource("3_bhapu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.61716, 0, -1.29463)
+variant = 2
+
+[node name="Tree4" parent="Props" index="3" instance=ExtResource("3_bhapu")]
+variant = 4
+
+[node name="Tree5" parent="Props" index="4" instance=ExtResource("3_bhapu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9566, 0, 2.16546)
+
+[node name="Tree6" parent="Props" index="5" instance=ExtResource("3_bhapu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.47538, 0, 4.42925)
+
+[node name="Bush" parent="Props" index="6" instance=ExtResource("4_ewrsr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.05979, 0, 1.23461)
+
+[node name="Bush2" parent="Props" index="7" instance=ExtResource("4_ewrsr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.23435, 0, -1.0032)
+
+[node name="Bush3" parent="Props" index="8" instance=ExtResource("4_ewrsr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74161, 0, 4.47978)
+variant = 1

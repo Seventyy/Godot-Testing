@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bve5ksn0yjdr5"]
+
+[ext_resource type="Material" uid="uid://c3n88lrjukll3" path="res://materials/bush.tres" id="1_ajami"]
+[ext_resource type="ArrayMesh" uid="uid://blj4cl0drplvp" path="res://bush.obj" id="1_qxmvg"]
+
+[node name="Bush" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_ajami")
+mesh = ExtResource("1_qxmvg")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" uid="uid://dtdstp6d7pqi5" path="res://map/tiles/tile.tscn" id="1_18tro"]
+[ext_resource type="PackedScene" path="res://map/grounds/ground_0a.tscn" id="2_fft0j"]
+[ext_resource type="PackedScene" path="res://map/walls/wall_big_testing.tscn" id="3_ur2e6"]
+
+[node name="BigWallsTesting" instance=ExtResource("1_18tro")]
+
+[node name="GroundFull" parent="Terrain/Ground" index="0" instance=ExtResource("2_fft0j")]
+
+[node name="WallBigStrait3" parent="Terrain/Walls" index="0" instance=ExtResource("3_ur2e6")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 0, 0, 0)
+
+[node name="WallBigStrait1" parent="Terrain/Walls" index="1" instance=ExtResource("3_ur2e6")]
+
+[node name="WallBigStrait2" parent="Terrain/Walls" index="2" instance=ExtResource("3_ur2e6")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 0, 0, 0)
